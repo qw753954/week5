@@ -132,7 +132,7 @@
             width: 100%;
             padding: 20px 0;
             font-size: 22px;
-            letter-spacing: 1px;
+            letter-spacing: 6px;
             color: $color-primary;
             background-color: $color-highlight;
             display: flex;
@@ -141,26 +141,27 @@
             position: relative;
             i {
                 position: absolute;
-                left: 100px;
+                left: 0;
+                right: 0;
                 opacity: 0;
             }
             &:hover i {
                 opacity: 1;
-                transform: translateX(175px);
+                transform: translateX(40%);
                 animation: quickly .3s infinite alternate linear;
                 animation-delay: .6s;
                 transition: .7s;
             }
             &:hover span {
-                transform: translateX(138px);
+                letter-spacing: 1px;
                 transition: .7s;
             }
             @keyframes quickly {
                 0% {
-                    transform: translateX(175px);
+                    transform: translateX(40%);
                 }
                 100% {
-                    transform: translateX(160px);
+                    transform: translateX(35%);
                 }
             }
         }
