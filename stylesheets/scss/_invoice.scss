@@ -32,8 +32,8 @@
                     }
                     i:first-child::after,
                     i:nth-child(2)::after {
-                        content: '';
                         position: absolute;
+                        content: '';
                         width: 60px;
                         height: 1px;
                         top: 0;
