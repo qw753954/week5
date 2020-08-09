@@ -68,7 +68,6 @@ button {
             border-radius: 100%;
             &:hover {
                 background-color: $color-secondary;
-                transition: .2s;
             }
         }
     }
@@ -83,10 +82,10 @@ button {
         box-sizing: border-box;
         .hamIcon {
             display: block;
-            padding: 5px 15px;
+            padding: 10px 10px;
+            border-radius: 100%;
             &:hover {
-                opacity: .7;
-                transition: .2s;
+                background-color: $color-secondary;
             }
         }
         .logo {
@@ -125,10 +124,6 @@ button {
                     background-color: #fff;
                     max-height: 200px;
                 }
-            }
-            .shopping-cart {
-                padding: 5px 15px;
-                margin-left: 0px;
             }
         }
     }
