@@ -621,7 +621,6 @@ button {
 .content .order-list .order-item li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .content .order-list .order-item li .pic {
   width: 50%;
