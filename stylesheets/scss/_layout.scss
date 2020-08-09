@@ -164,7 +164,7 @@
             input {
                 border: none;
                 max-width: 250px;
-                padding: 13px 20px 15px 55px;
+                padding: 13px 20px 13px 55px;
                 box-sizing: border-box;
                 font-size: 15px;
                 font-weight: 300;
@@ -175,10 +175,14 @@
                 }
             }
             button {
-                padding: 18px 22px;
+                padding: 22px 26px;
                 background-color: $color-highlight;
-                &:hover img {
+                &:hover i {
                     animation: run .6s infinite alternate linear;
+                }
+                i {
+                    color: $color-primary;
+                    font-size: 18px;
                 }
             }
             @keyframes run {
