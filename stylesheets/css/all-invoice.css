@@ -608,15 +608,20 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.content .order-list .order-item li img {
-  width: 120px;
+.content .order-list .order-item li .pic {
+  width: 50%;
+  margin-right: 20px;
+}
+.content .order-list .order-item li .pic img {
+  width: 100%;
   height: 80px;
   object-fit: cover;
 }
 .content .order-list .order-item li .intro {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  font-weight: 300;
+  font-weight: 100;
 }
 .content .order-list .order-item li .intro span {
   font-size: 20px;
@@ -626,7 +631,7 @@ button {
   margin-top: 16px;
 }
 .content .order-list .order-price {
-  font-weight: 300;
+  font-weight: 100;
 }
 .content .order-list .order-price li {
   display: flex;
