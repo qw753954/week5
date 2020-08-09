@@ -548,6 +548,7 @@ button {
   width: 100%;
   padding: 20px 0;
   font-size: 22px;
+  letter-spacing: 1px;
   color: #3f5d45;
   background-color: #FFE180;
   display: flex;
@@ -563,11 +564,21 @@ button {
 .content .invoice-submit:hover i {
   opacity: 1;
   transform: translateX(175px);
+  animation: quickly 0.3s infinite alternate linear;
+  animation-delay: 0.6s;
   transition: 0.7s;
 }
 .content .invoice-submit:hover span {
-  transform: translateX(135px);
+  transform: translateX(138px);
   transition: 0.7s;
+}
+@keyframes quickly {
+  0% {
+    transform: translateX(175px);
+  }
+  100% {
+    transform: translateX(160px);
+  }
 }
 .content .invoice button,
 .content .invoice input {
