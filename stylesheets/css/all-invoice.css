@@ -448,8 +448,8 @@ button {
 }
 .content .invoice-info h2 .step-icon i:first-child::after,
 .content .invoice-info h2 .step-icon i:nth-child(2)::after {
-  content: "";
   position: absolute;
+  content: "";
   width: 60px;
   height: 1px;
   top: 0;
