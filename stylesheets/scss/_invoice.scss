@@ -186,6 +186,21 @@
             .order-item {
                 padding: 16px 20px;
             }
+            .order-price {
+                font-weight: 300;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    &:first-child {
+                        margin-bottom: 8px;
+                    }
+                }
+                .total {
+                    margin-top: 16px;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
             .order-item {
                 li {
                     display: flex;
@@ -204,7 +219,7 @@
                         width: 50%;
                         display: flex;
                         flex-direction: column;
-                        font-weight: 100;
+                        font-weight: 300;
                         span {
                             font-size: 20px;
                             font-weight: 500;
@@ -213,21 +228,6 @@
                 }
                 li+li {
                     margin-top: 16px;
-                }
-            }
-            .order-price {
-                font-weight: 100;
-                li {
-                    display: flex;
-                    justify-content: space-between;
-                    &:first-child {
-                        margin-bottom: 8px;
-                    }
-                }
-                .total {
-                    margin-top: 16px;
-                    font-weight: 500;
-                    font-size: 20px;
                 }
             }
         }
