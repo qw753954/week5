@@ -446,7 +446,7 @@ button {
 .content .invoice-info h2 .step-icon i + i {
   margin-left: 60px;
 }
-.content .invoice-info h2 .step-icon i:nth-child(1)::after,
+.content .invoice-info h2 .step-icon i:first-child::after,
 .content .invoice-info h2 .step-icon i:nth-child(2)::after {
   content: "";
   position: absolute;
