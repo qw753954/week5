@@ -603,6 +603,21 @@ button {
 .content .order-list .order-item {
   padding: 16px 20px;
 }
+.content .order-list .order-price {
+  font-weight: 300;
+}
+.content .order-list .order-price li {
+  display: flex;
+  justify-content: space-between;
+}
+.content .order-list .order-price li:first-child {
+  margin-bottom: 8px;
+}
+.content .order-list .order-price .total {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 20px;
+}
 .content .order-list .order-item li {
   display: flex;
   align-items: center;
@@ -621,7 +636,7 @@ button {
   width: 50%;
   display: flex;
   flex-direction: column;
-  font-weight: 100;
+  font-weight: 300;
 }
 .content .order-list .order-item li .intro span {
   font-size: 20px;
@@ -629,21 +644,6 @@ button {
 }
 .content .order-list .order-item li + li {
   margin-top: 16px;
-}
-.content .order-list .order-price {
-  font-weight: 100;
-}
-.content .order-list .order-price li {
-  display: flex;
-  justify-content: space-between;
-}
-.content .order-list .order-price li:first-child {
-  margin-bottom: 8px;
-}
-.content .order-list .order-price .total {
-  margin-top: 16px;
-  font-weight: 500;
-  font-size: 20px;
 }
 
 @media (max-width: 768px) {
