@@ -50,23 +50,24 @@ button {
             align-items: center;
             max-height: 0px;
             li {
-                margin: 0 10px;
+                margin: 0 15px;
             }
             a {
                 display: block;
-                padding: 5px 20px;
+                padding: 5px 15px;
                 color: $color-primary;
                 text-decoration: none;
             }
             a:hover {
-                background: linear-gradient(180deg, transparent 50%, $color-secondary 50%);
+                background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
             }
         }
         .shopping-cart {
-            padding: 5px 0 5px 20px;
+            padding: 10px 10px;
             margin-left: 20px;
+            border-radius: 100%;
             &:hover {
-                opacity: .7;
+                background-color: $color-secondary;
                 transition: .2s;
             }
         }
