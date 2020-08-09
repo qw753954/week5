@@ -427,7 +427,7 @@ button {
   /* ------ order ------*/
 }
 .content .invoice {
-  width: 58%;
+  width: 57%;
 }
 .content .invoice-info {
   padding: 30px 40px;
@@ -547,13 +547,27 @@ button {
 .content .invoice-submit {
   width: 100%;
   padding: 20px 0;
+  font-size: 22px;
   color: #3f5d45;
-  font-size: 24px;
   background-color: #FFE180;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.content .invoice-submit:hover {
-  letter-spacing: 8px;
-  transition: 0.5s;
+.content .invoice-submit i {
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+}
+.content .invoice-submit:hover i {
+  opacity: 1;
+  transform: translateX(175px);
+  transition: 0.7s;
+}
+.content .invoice-submit:hover span {
+  transform: translateX(135px);
+  transition: 0.7s;
 }
 .content .invoice button,
 .content .invoice input {
