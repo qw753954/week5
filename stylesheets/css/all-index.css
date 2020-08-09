@@ -338,6 +338,7 @@ button {
   width: 172px;
 }
 .footer-top .contact ul {
+  font-weight: 300;
   line-height: 24px;
   letter-spacing: 1px;
 }
