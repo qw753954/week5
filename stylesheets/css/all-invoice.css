@@ -163,7 +163,7 @@ button {
 }
 .header .logo {
   display: block;
-  width: 220px;
+  width: 200px;
   height: 40px;
   background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat 100% center;
   text-indent: 101%;
@@ -192,7 +192,9 @@ button {
   background: linear-gradient(180deg, #fff 50%, #EAF0ED 50%);
 }
 .header .nav .shopping-cart {
-  padding: 10px 10px;
+  font-size: 18px;
+  color: #3f5d45;
+  padding: 10px 14px;
   margin-left: 20px;
   border-radius: 100%;
 }
@@ -210,14 +212,16 @@ button {
   }
   .header .hamIcon {
     display: block;
-    padding: 10px 10px;
+    padding: 10px 16px;
     border-radius: 100%;
+    font-size: 18px;
+    color: #3f5d45;
   }
   .header .hamIcon:hover {
     background-color: #EAF0ED;
   }
   .header .logo {
-    background-size: 75%;
+    background-size: 74%;
     background-position: center;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
   }
@@ -251,6 +255,9 @@ button {
   .header .navbar .ham-active {
     background-color: #fff;
     max-height: 200px;
+  }
+  .header .nav .shopping-cart {
+    margin-left: 0;
   }
 }
 /* ─────────────────── header end ───────────────────*/
