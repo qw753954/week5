@@ -282,6 +282,7 @@ button {
   font-weight: 300;
   line-height: 30px;
   margin-left: 20px;
+  letter-spacing: 1px;
 }
 .subscribe-title img {
   width: 40px;
@@ -345,7 +346,7 @@ button {
   letter-spacing: 1px;
 }
 .footer-top .slogan {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 40px;
   letter-spacing: 6px;
@@ -475,7 +476,7 @@ button {
   color: #EAF0ED;
 }
 .content .invoice-info .invoice-sort label:hover {
-  text-decoration: underline;
+  background-color: #6e8a74;
   transition: 0.4s;
 }
 .content .invoice-info .panel-control,
@@ -505,7 +506,11 @@ button {
   justify-content: space-between;
 }
 .content .invoice-info .invoice-form .address label {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.content .invoice-info .invoice-form .address label input {
+  margin-right: 6px;
 }
 .content .invoice-info .invoice-form input[type=text],
 .content .invoice-info .invoice-form select {
@@ -564,8 +569,9 @@ button {
 }
 .content .order-list h3 {
   padding: 16px 0;
-  text-align: center;
   font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
   background-color: #EAF0ED;
 }
 .content .order-list .order-price,
