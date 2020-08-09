@@ -282,6 +282,7 @@ button {
   font-weight: 300;
   line-height: 30px;
   margin-left: 20px;
+  letter-spacing: 1px;
 }
 .subscribe-title img {
   width: 40px;
@@ -345,7 +346,7 @@ button {
   letter-spacing: 1px;
 }
 .footer-top .slogan {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
   line-height: 40px;
   letter-spacing: 6px;
@@ -436,6 +437,7 @@ button {
 .content .menu h2 {
   padding: 16px 0;
   font-size: 24px;
+  letter-spacing: 1px;
   color: #EAF0ED;
   background-color: #3f5d45;
 }
