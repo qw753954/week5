@@ -30,7 +30,7 @@
                     i+i {
                         margin-left: 60px;
                     }
-                    i:nth-child(1)::after,
+                    i:first-child::after,
                     i:nth-child(2)::after {
                         content: '';
                         position: absolute;
