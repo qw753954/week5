@@ -12,7 +12,7 @@
     margin-bottom: 60px;
     /* ------ invoice ------*/
     .invoice {
-        width: 58%;
+        width: 57%;
         &-info {
             padding: 30px 40px;
             color: $color-secondary;
@@ -130,12 +130,26 @@
         &-submit {
             width: 100%;
             padding: 20px 0;
+            font-size: 22px;
             color: $color-primary;
-            font-size: 24px;
             background-color: $color-highlight;
-            &:hover {
-                letter-spacing: 8px;
-                transition: .5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            i {
+                position: absolute;
+                left: 100px;
+                opacity: 0;
+            }
+            &:hover i {
+                opacity: 1;
+                transform: translateX(175px);
+                transition: .7s;
+            }
+            &:hover span {
+                transform: translateX(135px);
+                transition: .7s;
             }
         }
         button,
