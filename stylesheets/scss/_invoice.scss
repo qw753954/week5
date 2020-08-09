@@ -1,0 +1,215 @@
+/* ─────────────────── invoice_content start ───────────────────*/
+
+.wrap-invoice {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    /* ------ invoice ------*/
+    .invoice {
+        width: 58%;
+        &-info {
+            padding: 30px 40px;
+            color: $color-secondary;
+            background-color: $color-primary;
+            h2 {
+                font-size: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .step-icon {
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    i+i {
+                        margin-left: 60px;
+                    }
+                    i:nth-child(1)::after,
+                    i:nth-child(2)::after {
+                        content: '';
+                        position: absolute;
+                        width: 60px;
+                        height: 1px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        background-color: $color-secondary;
+                    }
+                }
+            }
+            .invoice-sort {
+                display: flex;
+                font-size: 20px;
+                margin: 30px 0;
+                border: 1px solid $color-secondary;
+                label {
+                    width: 50%;
+                    text-align: center;
+                    display: block;
+                    padding: 15px 0;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $color-secondary;
+                    &:hover {
+                        text-decoration: underline;
+                        transition: .4s;
+                    }
+                }
+            }
+            .panel-control,
+            .elec,
+            .send {
+                display: none;
+            }
+            #elec:checked~.invoice-sort [for="elec"],
+            #send:checked~.invoice-sort [for="send"] {
+                background-color: $color-secondary;
+                color: $color-primary;
+            }
+            #elec:checked~.elec,
+            #send:checked~.send {
+                display: block;
+            }
+            .send {
+                position: relative
+            }
+            .invoice-form {
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                }
+                .address {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    label {
+                        font-size: 16px;
+                    }
+                }
+                input[type="text"],
+                select {
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: inherit;
+                    color: $color-primary;
+                    border: none;
+                    padding: 17px 20px;
+                    box-sizing: border-box;
+                    background-color: $color-secondary;
+                    &:focus {
+                        background-color: #fff;
+                    }
+                }
+                input[type="text"] {
+                    width: 100%;
+                }
+                select {
+                    width: 48%;
+                    appearance: none
+                }
+                .select-option {
+                    margin-bottom: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .e-mail {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        &-submit {
+            width: 100%;
+            padding: 20px 0;
+            color: $color-primary;
+            font-size: 24px;
+            background-color: $color-highlight;
+            &:hover {
+                letter-spacing: 8px;
+                transition: .5s;
+            }
+        }
+        button,
+        input {
+            outline: none;
+        }
+    }
+    /* ------ order ------*/
+    .order {
+        width: 40%;
+        color: $color-tertiary;
+        &-list {
+            margin-bottom: 20px;
+            border: 1px solid $color-secondary;
+            h3 {
+                padding: 16px 0;
+                text-align: center;
+                font-size: 24px;
+                background-color: $color-secondary;
+            }
+            .order-price,
+            .order-item {
+                padding: 16px 20px;
+            }
+            .order-item {
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    img {
+                        width: 120px;
+                        height: 80px;
+                        object-fit: cover;
+                    }
+                    .intro {
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: 300;
+                        span {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                li+li {
+                    margin-top: 16px;
+                }
+            }
+            .order-price {
+                font-weight: 300;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    &:first-child {
+                        margin-bottom: 8px;
+                    }
+                }
+                .total {
+                    margin-top: 16px;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include pad {
+    .content {
+        margin: 0;
+        .invoice {
+            width: 100%;
+        }
+        .order {
+            display: none;
+        }
+    }
+}
+
+
+/* ─────────────────── invoice_content end ───────────────────*/
