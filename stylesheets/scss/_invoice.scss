@@ -152,12 +152,12 @@
                 opacity: 1;
                 transform: translateX(40%);
                 animation: quickly .3s infinite alternate linear;
-                animation-delay: .6s;
-                transition: .7s;
+                animation-delay: .5s;
+                transition: .6s;
             }
             &:hover span {
                 letter-spacing: 1px;
-                transition: .7s;
+                transition: .6s;
             }
             @keyframes quickly {
                 0% {
