@@ -545,6 +545,9 @@ button {
      -moz-appearance: none;
           appearance: none;
 }
+.content .invoice-info .invoice-form select:focus {
+  outline: none;
+}
 .content .invoice-info .invoice-form .select-option {
   margin-bottom: 8px;
   display: flex;
