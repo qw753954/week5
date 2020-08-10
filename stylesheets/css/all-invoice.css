@@ -502,24 +502,10 @@ button {
 .content .invoice-info #send:checked ~ .send {
   display: block;
 }
-.content .invoice-info .send {
-  position: relative;
-}
-.content .invoice-info .invoice-form h4 {
+.content .invoice-info .invoice-form label {
+  display: inline-block;
   font-size: 20px;
   margin-bottom: 8px;
-}
-.content .invoice-info .invoice-form .address {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.content .invoice-info .invoice-form .address label {
-  font-size: 15px;
-  font-weight: 300;
-}
-.content .invoice-info .invoice-form .address label input {
-  margin-right: 6px;
 }
 .content .invoice-info .invoice-form input[type=text],
 .content .invoice-info .invoice-form select {
@@ -555,6 +541,21 @@ button {
 }
 .content .invoice-info .invoice-form .e-mail {
   margin-bottom: 16px;
+}
+.content .invoice-info .send {
+  position: relative;
+}
+.content .invoice-info .send .same-address {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+.content .invoice-info .send .same-address label {
+  font-size: 15px;
+  font-weight: 300;
+}
+.content .invoice-info .send .same-address label input {
+  margin-right: 6px;
 }
 .content .invoice-submit {
   width: 100%;
