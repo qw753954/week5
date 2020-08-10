@@ -77,25 +77,11 @@
             #send:checked~.send {
                 display: block;
             }
-            .send {
-                position: relative
-            }
             .invoice-form {
-                h4 {
+                label {
+                    display: inline-block;
                     font-size: 20px;
                     margin-bottom: 8px;
-                }
-                .address {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    label {
-                        font-size: 15px;
-                        font-weight: 300;
-                        input {
-                            margin-right: 6px;
-                        }
-                    }
                 }
                 input[type="text"],
                 select {
@@ -128,6 +114,21 @@
                 }
                 .e-mail {
                     margin-bottom: 16px;
+                }
+            }
+            .send {
+                position: relative;
+                .same-address {
+                    position: absolute;
+                    top: 2px;
+                    right: 0;
+                    label {
+                        font-size: 15px;
+                        font-weight: 300;
+                        input {
+                            margin-right: 6px;
+                        }
+                    }
                 }
             }
         }
