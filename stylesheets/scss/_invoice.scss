@@ -116,7 +116,10 @@
                 }
                 select {
                     width: 48%;
-                    appearance: none
+                    appearance: none;
+                    &:focus {
+                        outline: none;
+                    }
                 }
                 .select-option {
                     margin-bottom: 8px;
