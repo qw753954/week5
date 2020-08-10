@@ -163,9 +163,9 @@ button {
 }
 .header .logo {
   display: block;
-  width: 200px;
+  width: 220px;
   height: 40px;
-  background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat 100% center;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat center center/contain;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
