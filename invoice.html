@@ -53,30 +53,31 @@
                     <label for="send">郵寄發票</label>
                 </div>
                 <form class="invoice-form elec">
-                    <h4>電子郵件信箱</h4>
-                    <input type="text" class="e-mail" placeholder="example@email.com">
-                    <h4>統一編號（選填）</h4>
-                    <input type="text" placeholder="12345678">
+                    <label for="email">電子郵件信箱</label>
+                    <input type="text" class="e-mail" id="email" placeholder="example@email.com">
+                    <label for="numbers">統一編號（選填）</label>
+                    <input type="text" id="numbers" placeholder="12345678">
                 </form>
                 <form class="invoice-form send">
-                    <h4 class="address">
-                        地址
-                        <label><input type="checkbox">同運送地址</label>
-                    </h4>
+                    <label for="address">地址</label>
                     <div class="select-option">
-                        <select>
+                        <select id="address">
                             <option value="高雄市">高雄市</option>
                         </select>
-                        <select>
+                        <select id="address">
                             <option value="新興區">新興區</option>
                             <option value="苓雅區">苓雅區</option>
                             <option value="板橋區">鼓山區</option>
                             <option value="新莊區">旗津區</option>    
                         </select>
                     </div>
-                    <input type="text" class="e-mail" placeholder="幸福路 520 號">
-                    <h4>統一編號（選填）</h4>
-                    <input type="text" placeholder="12345678">
+                    <input type="text" class="e-mail" id="side" placeholder="幸福路 520 號">
+                    <label for="numbers">統一編號（選填）</label>
+                    <input type="text" id="numbers" placeholder="12345678">
+
+                    <div class="same-address">
+                        <label><input type="checkbox" id="address">同運送地址</label>
+                    </div>
                 </form>
             </div>
             <button class="invoice-submit">
