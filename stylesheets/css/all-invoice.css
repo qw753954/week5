@@ -549,9 +549,9 @@ button {
   outline: none;
 }
 .content .invoice-info .invoice-form .select-option {
-  margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
 }
 .content .invoice-info .invoice-form .e-mail {
   margin-bottom: 16px;
