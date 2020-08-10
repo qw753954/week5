@@ -51,9 +51,9 @@
                     padding: 5px 15px;
                     color: $color-primary;
                     text-decoration: none;
-                }
-                a:hover {
-                    background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
+                    &:hover {
+                        background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
+                    }
                 }
             }
             .shopping-cart {
