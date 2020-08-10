@@ -545,16 +545,16 @@ button {
 .content .invoice-info .send {
   position: relative;
 }
-.content .invoice-info .send .same-address {
+.content .invoice-info .send .address {
   position: absolute;
   top: 2px;
   right: 0;
 }
-.content .invoice-info .send .same-address label {
+.content .invoice-info .send .address label {
   font-size: 15px;
   font-weight: 300;
 }
-.content .invoice-info .send .same-address label input {
+.content .invoice-info .send .address label input {
   margin-right: 6px;
 }
 .content .invoice-submit {
