@@ -1,5 +1,6 @@
-@import "mixin";
-@import "variable";
-@import "reset";
-@import "layout";
+@import "config/mixin";
+@import "config/variable";
+@import "config/reset";
+@import "layout/header";
 @import "index";
+@import "layout/footer";
