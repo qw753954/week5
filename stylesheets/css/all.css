@@ -310,7 +310,7 @@ button {
 }
 .menu-list :nth-child(n+2):hover {
   background-color: rgba(234, 240, 237, 0.6);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .menu-active {
   background-color: #EAF0ED;
@@ -350,7 +350,7 @@ button {
 
 .tag {
   color: #EAF0ED;
-  padding: 10px;
+  padding: 10px 8px;
   font-weight: 300;
   text-align: center;
   letter-spacing: 3px;
@@ -443,15 +443,6 @@ button {
   justify-content: flex-end;
   margin-top: 10px;
 }
-.page a {
-  width: 60px;
-  height: 60px;
-  text-decoration: none;
-  border-left: 1px solid #EAF0ED;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .page-list {
   display: flex;
   font-size: 20px;
@@ -463,12 +454,22 @@ button {
 }
 .page-list :nth-child(n+3):hover, .page-list :first-child :hover {
   background-color: #EAF0ED;
-  transition: 0.2s;
+  transition: 0.3s;
+}
+.page-list a {
+  width: 60px;
+  height: 60px;
+  color: #3f5d45;
+  text-decoration: none;
+  border-left: 1px solid #EAF0ED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .page-list i {
   font-size: 16px;
 }
-.page-active {
+.page .page-active {
   color: #EAF0ED;
   background-color: #3f5d45;
 }
