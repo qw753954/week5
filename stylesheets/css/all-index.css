@@ -143,14 +143,12 @@ button {
   font-family: inherit;
 }
 
-/* ─────────────────── container start ───────────────────*/
+/* ─────────────────── header start ───────────────────*/
 .container {
   max-width: 940px;
   margin: 0 auto;
 }
 
-/* ─────────────────── container end ───────────────────*/
-/* ─────────────────── header start ───────────────────*/
 .header {
   display: flex;
   align-items: center;
@@ -260,165 +258,6 @@ button {
   }
 }
 /* ─────────────────── header end ───────────────────*/
-/* ─────────────────── footer start ───────────────────*/
-.wrap {
-  max-width: 780px;
-  margin: 0 auto;
-}
-
-.subscribe {
-  background-color: #3f5d45;
-  color: #EAF0ED;
-  padding: 30px 0;
-}
-.subscribe .space-between {
-  display: flex;
-  justify-content: space-between;
-}
-.subscribe-title {
-  display: flex;
-  align-items: center;
-}
-.subscribe-title h3 {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 30px;
-  margin-left: 20px;
-  letter-spacing: 1px;
-}
-.subscribe-title img {
-  width: 40px;
-}
-.subscribe-form {
-  display: flex;
-}
-.subscribe-form input {
-  border: none;
-  max-width: 250px;
-  padding: 13px 20px 13px 55px;
-  box-sizing: border-box;
-  font-size: 15px;
-  font-weight: 300;
-  font-family: inherit;
-  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat #EAF0ED 20px 50%;
-}
-.subscribe-form input:focus {
-  background-color: #fff;
-}
-.subscribe-form button {
-  padding: 22px 25px;
-  background-color: #FFE180;
-}
-.subscribe-form button:hover i {
-  animation: run 0.6s infinite alternate linear;
-}
-.subscribe-form button i {
-  color: #3f5d45;
-  font-size: 18px;
-}
-@keyframes run {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10px);
-  }
-}
-.subscribe-form input:focus,
-.subscribe-form button:focus {
-  outline: none;
-}
-
-.footer {
-  padding: 30px 0;
-  color: #3f5d45;
-  background-color: #EAF0ED;
-}
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-.footer-top .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer-top .contact img {
-  width: 172px;
-}
-.footer-top .contact ul {
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 1px;
-}
-.footer-top .slogan {
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 40px;
-  letter-spacing: 6px;
-  writing-mode: vertical-rl;
-  font-family: "Noto Serif TC", serif;
-}
-.footer-top .slogan p {
-  text-indent: 12px;
-  white-space: nowrap;
-}
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer-bottom p {
-  font-weight: 300;
-}
-.footer-bottom .social-web {
-  display: flex;
-}
-.footer-bottom .social-web img {
-  width: 32px;
-}
-.footer-bottom .social-web img:hover {
-  transform: translateY(-4px);
-  transition: 0.4s;
-}
-.footer-bottom .social-web li + li {
-  margin-left: 8px;
-}
-
-@media (max-width: 1024px) {
-  .wrap {
-    padding: 0 40px;
-  }
-}
-@media (max-width: 768px) {
-  .wrap {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .subscribe-title {
-    margin-bottom: 30px;
-  }
-
-  .slogan {
-    display: none;
-  }
-
-  .contact img {
-    margin-bottom: 40px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .social-web {
-    margin: 38px 0 24px;
-  }
-}
-/* ─────────────────── footer end ───────────────────*/
 /* ─────────────────── banner start ───────────────────*/
 .banner {
   margin-bottom: 60px;
@@ -620,3 +459,162 @@ button {
   }
 }
 /* ─────────────────── index_page end ───────────────────*/
+/* ─────────────────── footer start ───────────────────*/
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.subscribe {
+  background-color: #3f5d45;
+  color: #EAF0ED;
+  padding: 30px 0;
+}
+.subscribe .space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-title {
+  display: flex;
+  align-items: center;
+}
+.subscribe-title h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+.subscribe-title img {
+  width: 40px;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-form input {
+  border: none;
+  max-width: 250px;
+  padding: 13px 20px 13px 55px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: inherit;
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat #EAF0ED 20px 50%;
+}
+.subscribe-form input:focus {
+  background-color: #fff;
+}
+.subscribe-form button {
+  padding: 22px 25px;
+  background-color: #FFE180;
+}
+.subscribe-form button:hover i {
+  animation: run 0.6s infinite alternate linear;
+}
+.subscribe-form button i {
+  color: #3f5d45;
+  font-size: 18px;
+}
+@keyframes run {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+.subscribe-form input:focus,
+.subscribe-form button:focus {
+  outline: none;
+}
+
+.footer {
+  padding: 30px 0;
+  color: #3f5d45;
+  background-color: #EAF0ED;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer-top .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-top .contact img {
+  width: 172px;
+}
+.footer-top .contact ul {
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.footer-top .slogan {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 6px;
+  writing-mode: vertical-rl;
+  font-family: "Noto Serif TC", serif;
+}
+.footer-top .slogan p {
+  text-indent: 12px;
+  white-space: nowrap;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom p {
+  font-weight: 300;
+}
+.footer-bottom .social-web {
+  display: flex;
+}
+.footer-bottom .social-web img {
+  width: 32px;
+}
+.footer-bottom .social-web img:hover {
+  transform: translateY(-4px);
+  transition: 0.4s;
+}
+.footer-bottom .social-web li + li {
+  margin-left: 8px;
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-title {
+    margin-bottom: 30px;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .contact img {
+    margin-bottom: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-web {
+    margin: 38px 0 24px;
+  }
+}
+/* ─────────────────── footer end ───────────────────*/
