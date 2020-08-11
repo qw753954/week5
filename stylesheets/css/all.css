@@ -257,16 +257,16 @@ button {
     background: #EAF0ED;
     transition: 0.5s;
   }
-}
-.shopping-cart {
-  margin-left: 0;
-}
 
-.ham-active {
-  background-color: #fff;
-  max-height: 200px;
-}
+  .shopping-cart {
+    margin-left: 0;
+  }
 
+  .ham-active {
+    background-color: #fff;
+    max-height: 200px;
+  }
+}
 /* ─────────────────── header end ───────────────────*/
 /* ─────────────────── banner start ───────────────────*/
 .banner {
