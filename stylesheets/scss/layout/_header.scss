@@ -12,109 +12,114 @@
     justify-content: space-between;
     padding: 30px 0;
     position: relative;
-    .hamIcon {
-        display: none;
-    }
-    .logo {
-        display: block;
-        width: 220px;
-        height: 40px;
-        background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat center center / contain;
-        text-indent: 101%;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    .nav {
+}
+
+.hamIcon {
+    display: none;
+}
+
+.logo {
+    display: block;
+    width: 220px;
+    height: 40px;
+    background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat center center / contain;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    &bar {
         display: flex;
         align-items: center;
-        &bar {
-            display: flex;
-            align-items: center;
-            max-height: 0px;
-            li {
-                margin: 0 15px;
-            }
-            a {
-                display: block;
-                padding: 5px 15px;
-                color: $color-primary;
-                text-decoration: none;
-                &:hover {
-                    background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
-                }
-            }
+        max-height: 0px;
+        li {
+            margin: 0 15px;
         }
-        .shopping-cart {
-            font-size: 18px;
+        a {
+            display: block;
+            padding: 5px 15px;
             color: $color-primary;
-            padding: 10px 14px;
-            margin-left: 20px;
-            border-radius: 100%;
+            text-decoration: none;
             &:hover {
-                background-color: $color-secondary;
+                background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
             }
         }
     }
-    .ham-active {
-        max-height: 200px;
+    .shopping-cart {
+        font-size: 18px;
+        color: $color-primary;
+        padding: 10px 14px;
+        margin-left: 20px;
+        border-radius: 100%;
+        &:hover {
+            background-color: $color-secondary;
+        }
     }
+}
+
+.ham-active {
+    max-height: 200px;
 }
 
 @include pad {
     .header {
         padding: 30px 6%;
         box-sizing: border-box;
-        .hamIcon {
-            display: block;
-            padding: 10px 16px;
-            border-radius: 100%;
-            font-size: 18px;
-            color: $color-primary;
-            &:hover {
-                background-color: $color-secondary;
-            }
-        }
-        .logo {
-            background-size: 74%;
-            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
-        }
-        .nav {
-            &bar {
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                left: 0;
-                right: 0;
-                overflow: hidden;
-                text-align: center;
-                background-color: #fff;
-                transition: .8s;
-                z-index: 1; // 防止下拉式選單在 invoice 頁面被 .step-icon 遮到
-                li {
-                    width: 100%;
-                }
-                li+li {
-                    border-top: 1px solid $color-secondary;
-                }
-                a {
-                    display: block;
-                    padding: 15px 0;
-                    &:hover {
-                        background: $color-secondary;
-                        transition: .5s;
-                    }
-                }
-                .ham-active {
-                    background-color: #fff;
-                    max-height: 200px;
-                }
-            }
-            .shopping-cart {
-                margin-left: 0;
-            }
+    }
+    .hamIcon {
+        display: block;
+        padding: 10px 16px;
+        border-radius: 100%;
+        font-size: 18px;
+        color: $color-primary;
+        &:hover {
+            background-color: $color-secondary;
         }
     }
+    .logo {
+        background-size: 74%;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+    }
+    .nav {
+        &bar {
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fff;
+            transition: .8s;
+            z-index: 1; // 防止下拉式選單在 invoice 頁面被 .step-icon 遮到
+            li {
+                width: 100%;
+            }
+            li+li {
+                border-top: 1px solid $color-secondary;
+            }
+            a {
+                display: block;
+                padding: 15px 0;
+                &:hover {
+                    background: $color-secondary;
+                    transition: .5s;
+                }
+            }
+        }
+        .shopping-cart {
+            margin-left: 0;
+        }
+    }
+}
+
+.ham-active {
+    background-color: #fff;
+    max-height: 200px;
 }
 
 
