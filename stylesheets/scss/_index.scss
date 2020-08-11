@@ -45,7 +45,7 @@
     }
     &-list :nth-child(n + 2):hover {
         background-color: rgba(234, 240, 237, 0.6);
-        transition: 0.2s;
+        transition: 0.3s;
     }
     &-active {
         background-color: $color-secondary;
@@ -86,7 +86,7 @@
 
 .tag {
     color: $color-secondary;
-    padding: 10px;
+    padding: 10px 8px;
     font-weight: 300;
     text-align: center;
     letter-spacing: 3px;
@@ -181,15 +181,6 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
-    a {
-        width: 60px;
-        height: 60px;
-        text-decoration: none;
-        border-left: 1px solid $color-secondary;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     &-list {
         display: flex;
         font-size: 20px;
@@ -201,13 +192,23 @@
         & :nth-child(n + 3):hover,
         & :first-child :hover {
             background-color: $color-secondary;
-            transition: 0.2s;
+            transition: 0.3s;
+        }
+        a {
+            width: 60px;
+            height: 60px;
+            color: $color-primary;
+            text-decoration: none;
+            border-left: 1px solid $color-secondary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         i {
             font-size: 16px;
         }
     }
-    &-active {
+    .page-active {
         color: $color-secondary;
         background-color: $color-primary;
     }
