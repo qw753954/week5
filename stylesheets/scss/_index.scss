@@ -190,7 +190,7 @@
     }
     &-list {
         display: flex;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 300;
         background-color: #fff;
         border-top: 1px solid $color-secondary;
@@ -204,6 +204,9 @@
         .page-active {
             color: #EAF0ED;
             background-color: $color-primary;
+        }
+        i {
+            font-size: 16px;
         }
     }
 }
