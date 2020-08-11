@@ -143,12 +143,12 @@ button {
   font-family: inherit;
 }
 
-/* ─────────────────── header start ───────────────────*/
 .container {
   max-width: 940px;
   margin: 0 auto;
 }
 
+/* ─────────────────── header start ───────────────────*/
 .header {
   display: flex;
   align-items: center;
