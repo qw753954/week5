@@ -126,14 +126,16 @@
             outline: none;
         }
     }
-    .select-option {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 8px;
-    }
-    .e-mail {
-        margin-bottom: 16px;
-    }
+}
+
+.select-option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.e-mail {
+    margin-bottom: 16px;
 }
 
 .invoice-submit {
