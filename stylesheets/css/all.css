@@ -156,10 +156,12 @@ button {
   padding: 30px 0;
   position: relative;
 }
-.header .hamIcon {
+
+.hamIcon {
   display: none;
 }
-.header .logo {
+
+.logo {
   display: block;
   width: 220px;
   height: 40px;
@@ -168,38 +170,40 @@ button {
   white-space: nowrap;
   overflow: hidden;
 }
-.header .nav {
+
+.nav {
   display: flex;
   align-items: center;
 }
-.header .navbar {
+.navbar {
   display: flex;
   align-items: center;
   max-height: 0px;
 }
-.header .navbar li {
+.navbar li {
   margin: 0 15px;
 }
-.header .navbar a {
+.navbar a {
   display: block;
   padding: 5px 15px;
   color: #3f5d45;
   text-decoration: none;
 }
-.header .navbar a:hover {
+.navbar a:hover {
   background: linear-gradient(180deg, #fff 50%, #EAF0ED 50%);
 }
-.header .nav .shopping-cart {
+.nav .shopping-cart {
   font-size: 18px;
   color: #3f5d45;
   padding: 10px 14px;
   margin-left: 20px;
   border-radius: 100%;
 }
-.header .nav .shopping-cart:hover {
+.nav .shopping-cart:hover {
   background-color: #EAF0ED;
 }
-.header .ham-active {
+
+.ham-active {
   max-height: 200px;
 }
 
@@ -208,21 +212,24 @@ button {
     padding: 30px 6%;
     box-sizing: border-box;
   }
-  .header .hamIcon {
+
+  .hamIcon {
     display: block;
     padding: 10px 16px;
     border-radius: 100%;
     font-size: 18px;
     color: #3f5d45;
   }
-  .header .hamIcon:hover {
+  .hamIcon:hover {
     background-color: #EAF0ED;
   }
-  .header .logo {
+
+  .logo {
     background-size: 74%;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
   }
-  .header .navbar {
+
+  .navbar {
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -235,28 +242,29 @@ button {
     transition: 0.8s;
     z-index: 1;
   }
-  .header .navbar li {
+  .navbar li {
     width: 100%;
   }
-  .header .navbar li + li {
+  .navbar li + li {
     border-top: 1px solid #EAF0ED;
   }
-  .header .navbar a {
+  .navbar a {
     display: block;
     padding: 15px 0;
   }
-  .header .navbar a:hover {
+  .navbar a:hover {
     background: #EAF0ED;
     transition: 0.5s;
   }
-  .header .navbar .ham-active {
-    background-color: #fff;
-    max-height: 200px;
-  }
-  .header .nav .shopping-cart {
+  .nav .shopping-cart {
     margin-left: 0;
   }
 }
+.ham-active {
+  background-color: #fff;
+  max-height: 200px;
+}
+
 /* ─────────────────── header end ───────────────────*/
 /* ─────────────────── banner start ───────────────────*/
 .banner {
@@ -275,19 +283,20 @@ button {
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.content .menu {
+
+.menu {
   width: 32%;
   line-height: 35px;
   text-align: center;
 }
-.content .menu h2 {
+.menu h2 {
   padding: 16px 0;
   font-size: 24px;
   letter-spacing: 1px;
   color: #EAF0ED;
   background-color: #3f5d45;
 }
-.content .menu-list a {
+.menu-list a {
   display: block;
   padding: 16px 0;
   font-size: 22px;
@@ -297,28 +306,29 @@ button {
   border-right: 1px #EAF0ED solid;
   border-bottom: 1px #EAF0ED solid;
 }
-.content .menu-list :nth-child(n+2):hover {
+.menu-list :nth-child(n+2):hover {
   background-color: rgba(234, 240, 237, 0.6);
   transition: 0.2s;
 }
-.content .menu-active {
+.menu-active {
   background-color: #EAF0ED;
 }
-.content .product {
+
+.product {
   width: 66%;
 }
-.content .product-list {
+.product-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content .product-list-item {
+.product-item {
   width: 48%;
   border: 1px #EAF0ED solid;
   margin-bottom: 20px;
   position: relative;
 }
-.content .product-list-item .tag {
+.product .tag {
   color: #EAF0ED;
   padding: 10px;
   font-weight: 300;
@@ -330,17 +340,17 @@ button {
   top: 0;
   left: 20px;
 }
-.content .product-list-item .heart {
+.product .heart {
   position: absolute;
   top: 18px;
   right: 24px;
   color: #3f5d45;
 }
-.content .product-list-item .heart:hover {
+.product .heart:hover {
   transform: scale(1.3);
   transition: 0.2s;
 }
-.content .product-list-item .add {
+.product .add {
   width: 100%;
   color: #3f5d45;
   font-size: 22px;
@@ -349,28 +359,28 @@ button {
   padding: 16px 0;
   background-color: #EAF0ED;
 }
-.content .product-list-item .add:hover {
+.product .add:hover {
   background-color: #3f5d45;
   color: #EAF0ED;
   transition: 0.5s;
 }
-.content .product-list-item .add:focus {
+.product .add:focus {
   outline: none;
 }
-.content .product-list .product-intro {
+.product-intro {
   display: flex;
   font-size: 20px;
   text-align: center;
 }
-.content .product-list .product-intro .name,
-.content .product-list .product-intro .price {
+.product-intro .name,
+.product-intro .price {
   width: 50%;
   padding: 18px 0;
 }
-.content .product-list .product-intro .name {
+.product-intro .name {
   font-weight: 300;
 }
-.content .product-list .product-intro .price {
+.product-intro .price {
   font-weight: 500;
   border-left: 1px #EAF0ED solid;
 }
@@ -379,42 +389,45 @@ button {
   .content {
     flex-direction: column;
   }
-  .content .menu {
+
+  .menu {
     width: 100%;
   }
-  .content .menu-list {
+  .menu-list {
     display: flex;
     flex-wrap: wrap;
   }
-  .content .menu-list li {
+  .menu-list li {
     width: 50%;
   }
-  .content .menu-list li:nth-child(even) a {
+  .menu-list li:nth-child(even) a {
     border-left: none;
   }
-  .content .product {
+
+  .product {
     width: 100%;
     margin-top: 30px;
   }
-  .content .product-list {
+  .product-list {
     justify-content: space-evenly;
   }
-  .content .product-list-item {
+  .product-item {
     width: 42%;
     margin-bottom: 30px;
   }
-  .content .product-list .product-pic img {
+  .product-pic img {
     width: 100%;
   }
 }
 @media (max-width: 568px) {
-  .content .menu-list li {
+  .menu-list li {
     width: 100%;
   }
-  .content .menu-list li:nth-child(even) a {
+  .menu-list li:nth-child(even) a {
     border-left: 1px #EAF0ED solid;
   }
-  .content .product-list-item {
+
+  .product-item {
     width: 65%;
   }
 }
@@ -428,7 +441,6 @@ button {
 .page a {
   width: 60px;
   height: 60px;
-  color: #3f5d45;
   text-decoration: none;
   border-left: 1px solid #EAF0ED;
   display: flex;
@@ -448,12 +460,12 @@ button {
   background-color: #EAF0ED;
   transition: 0.2s;
 }
-.page-list .page-active {
-  color: #EAF0ED;
-  background-color: #3f5d45;
-}
 .page-list i {
   font-size: 16px;
+}
+.page-active {
+  color: #EAF0ED;
+  background-color: #3f5d45;
 }
 
 @media (max-width: 768px) {
@@ -463,44 +475,70 @@ button {
 }
 /* ─────────────────── index_page end ───────────────────*/
 /* ─────────────────── invoice_content start ───────────────────*/
-.wrap-invoice {
+.content-inner {
   max-width: 780px;
   margin: 0 auto;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
   margin-top: 35px;
   margin-bottom: 60px;
-  /* ------ invoice ------*/
-  /* ------ order ------*/
 }
-.content .invoice {
+
+/* ------ invoice ------*/
+.invoice {
   width: 57%;
 }
-.content .invoice-info {
+
+.invoice-info {
   padding: 30px 40px;
   color: #EAF0ED;
   background-color: #3f5d45;
 }
-.content .invoice-info h2 {
+.invoice-info h2 {
   font-size: 36px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.content .invoice-info h2 .step-icon {
+.invoice-info .panel-control,
+.invoice-info .elec,
+.invoice-info .send {
+  display: none;
+}
+.invoice-info #elec:checked ~ .invoice-sort [for=elec],
+.invoice-info #send:checked ~ .invoice-sort [for=send] {
+  background-color: #EAF0ED;
+  color: #3f5d45;
+}
+.invoice-info #elec:checked ~ .elec,
+.invoice-info #send:checked ~ .send {
+  display: block;
+}
+.invoice-info .send {
+  position: relative;
+}
+.invoice-info .address {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+.invoice-info .address label {
+  font-size: 15px;
+  font-weight: 300;
+}
+.invoice-info .address label input {
+  margin-right: 6px;
+}
+
+.step-icon {
   font-size: 20px;
   display: flex;
   justify-content: center;
   position: relative;
 }
-.content .invoice-info h2 .step-icon i + i {
+.step-icon i + i {
   margin-left: 60px;
 }
-.content .invoice-info h2 .step-icon i:first-child::after,
-.content .invoice-info h2 .step-icon i:nth-child(2)::after {
+.step-icon i:first-child::after,
+.step-icon i:nth-child(2)::after {
   position: absolute;
   content: "";
   width: 60px;
@@ -510,13 +548,14 @@ button {
   margin: auto;
   background-color: #EAF0ED;
 }
-.content .invoice-info .invoice-sort {
+
+.invoice-sort {
   display: flex;
   font-size: 20px;
   margin: 30px 0;
   border: 1px solid #EAF0ED;
 }
-.content .invoice-info .invoice-sort label {
+.invoice-sort label {
   width: 50%;
   text-align: center;
   display: block;
@@ -525,32 +564,19 @@ button {
   text-decoration: none;
   color: #EAF0ED;
 }
-.content .invoice-info .invoice-sort label:hover {
+.invoice-sort label:hover {
   background-color: rgba(234, 240, 237, 0.7);
   color: #3f5d45;
   transition: 0.4s;
 }
-.content .invoice-info .panel-control,
-.content .invoice-info .elec,
-.content .invoice-info .send {
-  display: none;
-}
-.content .invoice-info #elec:checked ~ .invoice-sort [for=elec],
-.content .invoice-info #send:checked ~ .invoice-sort [for=send] {
-  background-color: #EAF0ED;
-  color: #3f5d45;
-}
-.content .invoice-info #elec:checked ~ .elec,
-.content .invoice-info #send:checked ~ .send {
-  display: block;
-}
-.content .invoice-info .invoice-form label {
+
+.invoice-form label {
   display: inline-block;
   font-size: 20px;
   margin-bottom: 8px;
 }
-.content .invoice-info .invoice-form input[type=text],
-.content .invoice-info .invoice-form select {
+.invoice-form input[type=text],
+.invoice-form select {
   font-size: 16px;
   font-weight: 300;
   font-family: inherit;
@@ -560,46 +586,32 @@ button {
   box-sizing: border-box;
   background-color: #EAF0ED;
 }
-.content .invoice-info .invoice-form input[type=text]:focus,
-.content .invoice-info .invoice-form select:focus {
+.invoice-form input[type=text]:focus,
+.invoice-form select:focus {
   background-color: #fff;
 }
-.content .invoice-info .invoice-form input[type=text] {
+.invoice-form input[type=text] {
   width: 100%;
 }
-.content .invoice-info .invoice-form select {
+.invoice-form select {
   width: 48%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-.content .invoice-info .invoice-form select:focus {
+.invoice-form select:focus {
   outline: none;
 }
-.content .invoice-info .invoice-form .select-option {
+.invoice-form .select-option {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
-.content .invoice-info .invoice-form .e-mail {
+.invoice-form .e-mail {
   margin-bottom: 16px;
 }
-.content .invoice-info .send {
-  position: relative;
-}
-.content .invoice-info .send .address {
-  position: absolute;
-  top: 2px;
-  right: 0;
-}
-.content .invoice-info .send .address label {
-  font-size: 15px;
-  font-weight: 300;
-}
-.content .invoice-info .send .address label input {
-  margin-right: 6px;
-}
-.content .invoice-submit {
+
+.invoice-submit {
   width: 100%;
   padding: 20px 0;
   font-size: 22px;
@@ -611,20 +623,20 @@ button {
   align-items: center;
   position: relative;
 }
-.content .invoice-submit i {
+.invoice-submit i {
   position: absolute;
   left: 0;
   right: 0;
   opacity: 0;
 }
-.content .invoice-submit:hover i {
+.invoice-submit:hover i {
   opacity: 1;
   transform: translateX(40%);
   animation: quickly 0.3s infinite alternate linear;
   animation-delay: 0.5s;
   transition: 0.6s;
 }
-.content .invoice-submit:hover span {
+.invoice-submit:hover span {
   letter-spacing: 1px;
   transition: 0.6s;
 }
@@ -636,79 +648,88 @@ button {
     transform: translateX(35%);
   }
 }
-.content .invoice button,
-.content .invoice input {
+
+button,
+input {
   outline: none;
 }
-.content .order {
+
+/* ------ order ------*/
+.order {
   width: 40%;
   color: #8DA291;
 }
-.content .order-list {
+
+.order-list {
   margin-bottom: 20px;
   border: 1px solid #EAF0ED;
 }
-.content .order-list h3 {
+.order-list h3 {
   padding: 16px 0;
   font-size: 24px;
   letter-spacing: 1px;
   text-align: center;
   background-color: #EAF0ED;
 }
-.content .order-list .order-price,
-.content .order-list .order-item {
+
+.order-price,
+.order-item {
   padding: 16px 20px;
 }
-.content .order-list .order-price {
+
+.order-price {
   font-weight: 300;
 }
-.content .order-list .order-price li {
+.order-price li {
   display: flex;
   justify-content: space-between;
 }
-.content .order-list .order-price li:first-child {
+.order-price li:first-child {
   margin-bottom: 8px;
 }
-.content .order-list .order-price .total {
+.order-price .total {
   margin-top: 16px;
   font-weight: 500;
   font-size: 20px;
 }
-.content .order-list .order-item li {
+
+.order-item li {
   display: flex;
   align-items: center;
 }
-.content .order-list .order-item li .pic {
+.order-item li .pic {
   width: 50%;
   margin-right: 20px;
 }
-.content .order-list .order-item li .pic img {
+.order-item li .pic img {
   width: 100%;
   height: 80px;
   object-fit: cover;
 }
-.content .order-list .order-item li .intro {
+.order-item li .intro {
   width: 50%;
   display: flex;
   flex-direction: column;
   font-weight: 300;
 }
-.content .order-list .order-item li .intro span {
+.order-item li .intro span {
   font-size: 20px;
   font-weight: 500;
 }
-.content .order-list .order-item li + li {
+.order-item li + li {
   margin-top: 16px;
 }
 
 @media (max-width: 768px) {
-  .content {
+  .content-inner {
     margin: 0;
   }
-  .content .invoice {
+
+  .invoice {
     width: 100%;
   }
-  .content .order {
+
+  .order {
     display: none;
   }
 }
@@ -723,10 +744,6 @@ button {
   background-color: #3f5d45;
   color: #EAF0ED;
   padding: 30px 0;
-}
-.subscribe .space-between {
-  display: flex;
-  justify-content: space-between;
 }
 .subscribe-title {
   display: flex;
@@ -782,6 +799,11 @@ button {
   outline: none;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer {
   padding: 30px 0;
   color: #3f5d45;
@@ -792,31 +814,6 @@ button {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.footer-top .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer-top .contact img {
-  width: 172px;
-}
-.footer-top .contact ul {
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 1px;
-}
-.footer-top .slogan {
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 40px;
-  letter-spacing: 6px;
-  writing-mode: vertical-rl;
-  font-family: "Noto Serif TC", serif;
-}
-.footer-top .slogan p {
-  text-indent: 12px;
-  white-space: nowrap;
-}
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -825,17 +822,45 @@ button {
 .footer-bottom p {
   font-weight: 300;
 }
-.footer-bottom .social-web {
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact img {
+  width: 172px;
+}
+.contact ul {
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 6px;
+  writing-mode: vertical-rl;
+  font-family: "Noto Serif TC", serif;
+}
+.slogan p {
+  text-indent: 12px;
+  white-space: nowrap;
+}
+
+.social-web {
   display: flex;
 }
-.footer-bottom .social-web img {
+.social-web img {
   width: 32px;
 }
-.footer-bottom .social-web img:hover {
+.social-web img:hover {
   transform: translateY(-4px);
   transition: 0.4s;
 }
-.footer-bottom .social-web li + li {
+.social-web li + li {
   margin-left: 8px;
 }
 
