@@ -579,7 +579,8 @@ button {
   font-size: 20px;
   margin-bottom: 8px;
 }
-.invoice-form input[type=text],
+.invoice-form input[type=tel],
+.invoice-form input[type=email],
 .invoice-form select {
   font-size: 16px;
   font-weight: 300;
@@ -590,11 +591,13 @@ button {
   box-sizing: border-box;
   background-color: #EAF0ED;
 }
-.invoice-form input[type=text]:focus,
+.invoice-form input[type=tel]:focus,
+.invoice-form input[type=email]:focus,
 .invoice-form select:focus {
   background-color: #fff;
 }
-.invoice-form input[type=text] {
+.invoice-form input[type=tel],
+.invoice-form input[type=email] {
   width: 100%;
 }
 .invoice-form select {
