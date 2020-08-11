@@ -770,16 +770,17 @@ input {
 
 .subscribe-form {
   display: flex;
+  position: relative;
 }
 .subscribe-form input {
   border: none;
   max-width: 250px;
-  padding: 13px 20px 13px 55px;
+  padding: 10px 20px 10px 52px;
   box-sizing: border-box;
   font-size: 15px;
   font-weight: 300;
   font-family: inherit;
-  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat #EAF0ED 20px 50%;
+  background-color: #EAF0ED;
 }
 .subscribe-form input:focus {
   background-color: #fff;
@@ -806,6 +807,14 @@ input {
 .subscribe-form input:focus,
 .subscribe-form button:focus {
   outline: none;
+}
+
+.subs-envelope {
+  position: absolute;
+  top: 35%;
+  left: 20px;
+  color: #3f5d45;
+  font-size: 21px;
 }
 
 .space-between {
