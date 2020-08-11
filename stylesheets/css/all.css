@@ -192,14 +192,15 @@ button {
 .navbar a:hover {
   background: linear-gradient(180deg, #fff 50%, #EAF0ED 50%);
 }
-.nav .shopping-cart {
+
+.shopping-cart {
   font-size: 18px;
   color: #3f5d45;
   padding: 10px 14px;
   margin-left: 20px;
   border-radius: 100%;
 }
-.nav .shopping-cart:hover {
+.shopping-cart:hover {
   background-color: #EAF0ED;
 }
 
