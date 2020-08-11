@@ -48,15 +48,16 @@
             }
         }
     }
-    .shopping-cart {
-        font-size: 18px;
-        color: $color-primary;
-        padding: 10px 14px;
-        margin-left: 20px;
-        border-radius: 100%;
-        &:hover {
-            background-color: $color-secondary;
-        }
+}
+
+.shopping-cart {
+    font-size: 18px;
+    color: $color-primary;
+    padding: 10px 14px;
+    margin-left: 20px;
+    border-radius: 100%;
+    &:hover {
+        background-color: $color-secondary;
     }
 }
 
