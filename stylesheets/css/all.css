@@ -257,10 +257,11 @@ button {
     background: #EAF0ED;
     transition: 0.5s;
   }
-  .nav .shopping-cart {
-    margin-left: 0;
-  }
 }
+.shopping-cart {
+  margin-left: 0;
+}
+
 .ham-active {
   background-color: #fff;
   max-height: 200px;
