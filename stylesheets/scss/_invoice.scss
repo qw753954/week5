@@ -101,7 +101,8 @@
         font-size: 20px;
         margin-bottom: 8px;
     }
-    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
     select {
         font-size: 16px;
         font-weight: 300;
@@ -115,7 +116,8 @@
             background-color: #fff;
         }
     }
-    input[type="text"] {
+    input[type="tel"],
+    input[type="email"] {
         width: 100%;
     }
     select {
