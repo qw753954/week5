@@ -635,7 +635,7 @@ button {
 }
 .invoice-submit i {
   position: absolute;
-  left: 0px;
+  left: 50%;
   right: 61px;
   opacity: 0;
 }
