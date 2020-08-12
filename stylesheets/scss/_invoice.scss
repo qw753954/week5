@@ -144,6 +144,7 @@
     padding: 20px 0;
     font-size: 22px;
     letter-spacing: 6px;
+    text-decoration: none;
     color: $color-primary;
     background-color: $color-highlight;
     display: flex;
@@ -152,13 +153,13 @@
     position: relative;
     i {
         position: absolute;
-        left: 0;
-        right: 0;
+        left: 0px;
+        right: 61px;
         opacity: 0;
     }
     &:hover i {
         opacity: 1;
-        transform: translateX(40%);
+        transform: translateX(100%);
         animation: quickly .3s infinite alternate linear;
         animation-delay: .5s;
         transition: .6s;
@@ -169,16 +170,15 @@
     }
     @keyframes quickly {
         0% {
-            transform: translateX(40%);
+            transform: translateX(100%);
         }
         100% {
-            transform: translateX(35%);
+            transform: translateX(93%);
         }
     }
 }
 
-button,
-input {
+input:focus {
     outline: none;
 }
 
