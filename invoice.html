@@ -57,9 +57,9 @@
 
                 <form class="invoice-form elec">
                     <label for="email">電子郵件信箱</label>
-                    <input type="email" class="e-mail" id="email" placeholder="example@email.com">
-                    <label for="numbers">統一編號（選填）</label>
-                    <input type="tel" id="numbers" placeholder="12345678">
+                    <input type="email" class="e-mail" id="email" name="email" placeholder="example@email.com">
+                    <label for="tax-num">統一編號（選填）</label>
+                    <input type="tel" id="tax-num" name="tax-num" placeholder="12345678">
                 </form>
 
                 <form class="invoice-form send">
@@ -78,16 +78,16 @@
                             <option value="旗津區">旗津區</option>    
                         </select>
                     </div>
-                    <input type="email" class="e-mail" id="side" placeholder="幸福路 520 號">
-                    <label for="numbers">統一編號（選填）</label>
-                    <input type="tel" id="numbers" placeholder="12345678">
+                    <input type="email" class="e-mail" name="side" id="site" placeholder="幸福路 520 號">
+                    <label for="tax-num">統一編號（選填）</label>
+                    <input type="tel" name="tax-num" id="tax-num" placeholder="12345678">
                 </form>
             </div>
 
-            <button type="submit" class="invoice-submit">
+            <a href="#" class="invoice-submit">
                 <i class="fas fa-arrow-right"></i>
                 <span>確認結帳</span>
-            </button>
+            </a>
 
         </div>
 
