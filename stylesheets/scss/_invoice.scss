@@ -157,15 +157,15 @@
         right: 62px; //padr:40px + fsz:22px
         opacity: 0;
     }
+    &:hover {
+        letter-spacing: 1px;
+        transition: .6s;
+    }
     &:hover i {
         opacity: 1;
         transform: translateX(100%);
         animation: quickly .3s infinite alternate linear;
         animation-delay: .5s;
-        transition: .6s;
-    }
-    &:hover span {
-        letter-spacing: 1px;
         transition: .6s;
     }
     @keyframes quickly {
