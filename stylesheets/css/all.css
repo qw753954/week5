@@ -636,7 +636,7 @@ button {
 .invoice-submit i {
   position: absolute;
   left: 50%;
-  right: 61px;
+  right: 62px;
   opacity: 0;
 }
 .invoice-submit:hover i {
