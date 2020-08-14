@@ -535,7 +535,6 @@ button {
 .step-icon {
   font-size: 20px;
   display: flex;
-  justify-content: center;
   position: relative;
 }
 .step-icon i + i {
