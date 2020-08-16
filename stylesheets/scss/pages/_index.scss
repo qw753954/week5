@@ -137,9 +137,6 @@
             flex-wrap: wrap;
             li {
                 width: 50%;
-                &:nth-child(even) a {
-                    border-left: none;
-                }
             }
         }
     }
@@ -162,9 +159,6 @@
 @include mobile {
     .menu-list li {
         width: 100%;
-        &:nth-child(even) a {
-            border-left: 1px $color-secondary solid;
-        }
     }
     .product-item {
         width: 65%;
@@ -208,7 +202,7 @@
             font-size: 16px;
         }
     }
-    .page-active {
+    &-active {
         color: $color-secondary;
         background-color: $color-primary;
     }
