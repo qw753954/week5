@@ -463,7 +463,7 @@ button {
 .page-list i {
   font-size: 16px;
 }
-.page-active {
+.page .page-active {
   color: #EAF0ED;
   background-color: #3f5d45;
 }
