@@ -405,9 +405,6 @@ button {
   .menu-list li {
     width: 50%;
   }
-  .menu-list li:nth-child(even) a {
-    border-left: none;
-  }
 
   .product {
     width: 100%;
@@ -427,9 +424,6 @@ button {
 @media (max-width: 568px) {
   .menu-list li {
     width: 100%;
-  }
-  .menu-list li:nth-child(even) a {
-    border-left: 1px #EAF0ED solid;
   }
 
   .product-item {
@@ -469,7 +463,7 @@ button {
 .page-list i {
   font-size: 16px;
 }
-.page .page-active {
+.page-active {
   color: #EAF0ED;
   background-color: #3f5d45;
 }
