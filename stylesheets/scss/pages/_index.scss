@@ -102,9 +102,13 @@
     top: 18px;
     right: 24px;
     color: $color-primary;
-    &:hover {
+    cursor: pointer;
+    &:hover i {
         transform: scale(1.3);
         transition: .2s;
+    }
+    .heartIng {
+        font-weight: 800;
     }
 }
 
@@ -119,7 +123,7 @@
     &:hover {
         background-color: $color-primary;
         color: $color-secondary;
-        transition: .5s;
+        transition: .4s;
     }
     &:focus {
         outline: none;
