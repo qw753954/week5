@@ -366,10 +366,14 @@ button {
   top: 18px;
   right: 24px;
   color: #3f5d45;
+  cursor: pointer;
 }
-.heart:hover {
+.heart:hover i {
   transform: scale(1.3);
   transition: 0.2s;
+}
+.heart .heartIng {
+  font-weight: 800;
 }
 
 .add {
@@ -384,7 +388,7 @@ button {
 .add:hover {
   background-color: #3f5d45;
   color: #EAF0ED;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .add:focus {
   outline: none;
