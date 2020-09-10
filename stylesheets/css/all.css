@@ -142,6 +142,18 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
+button:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
 
 .container {
   max-width: 940px;
@@ -162,7 +174,6 @@ button {
 }
 
 .logo {
-  display: block;
   width: 220px;
   height: 40px;
   background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat center center/contain;
@@ -187,10 +198,13 @@ button {
   display: block;
   padding: 5px 15px;
   color: #3f5d45;
-  text-decoration: none;
 }
 .navbar a:hover {
   background: linear-gradient(180deg, #fff 50%, #EAF0ED 50%);
+}
+
+.now-page {
+  background-color: #000000;
 }
 
 .shopping-cart {
@@ -250,7 +264,6 @@ button {
     border-top: 1px solid #EAF0ED;
   }
   .navbar a {
-    display: block;
     padding: 15px 0;
   }
   .navbar a:hover {
@@ -299,11 +312,9 @@ button {
   background-color: #3f5d45;
 }
 .menu-list a {
-  display: block;
   padding: 16px 0;
   font-size: 22px;
   color: #3f5d45;
-  text-decoration: none;
   border-left: 1px #EAF0ED solid;
   border-right: 1px #EAF0ED solid;
   border-bottom: 1px #EAF0ED solid;
@@ -372,7 +383,8 @@ button {
   transform: scale(1.3);
   transition: 0.2s;
 }
-.heart .heartIng {
+
+.heartIng {
   font-weight: 800;
 }
 
@@ -458,7 +470,6 @@ button {
   width: 60px;
   height: 60px;
   color: #3f5d45;
-  text-decoration: none;
   border-left: 1px solid #EAF0ED;
   display: flex;
   align-items: center;
@@ -562,7 +573,6 @@ button {
   display: block;
   padding: 15px 0;
   cursor: pointer;
-  text-decoration: none;
   color: #EAF0ED;
 }
 .invoice-sort label:hover {
@@ -583,7 +593,6 @@ button {
   font-weight: 300;
   font-family: inherit;
   color: #3f5d45;
-  border: none;
   padding: 17px 20px;
   box-sizing: border-box;
   background-color: #EAF0ED;
@@ -622,7 +631,6 @@ button {
   padding: 20px 0;
   font-size: 22px;
   letter-spacing: 6px;
-  text-decoration: none;
   color: #3f5d45;
   background-color: #FFE180;
   display: flex;
@@ -738,6 +746,101 @@ input:focus {
   }
 }
 /* ─────────────────── invoice_content end ───────────────────*/
+/* ─────────────────── invoice_content start ───────────────────*/
+.content-inner {
+  max-width: 780px;
+  margin: 30px auto 45px;
+}
+
+.inner-login {
+  display: flex;
+  align-items: center;
+}
+
+/* ------ login ------*/
+.login {
+  width: 50%;
+}
+
+.login-info {
+  padding: 40px 30px 25px;
+  box-sizing: border-box;
+  color: #EAF0ED;
+  background-color: #3f5d45;
+}
+.login-info h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-info label {
+  font-weight: 300;
+}
+
+.login-form .email,
+.login-form .password {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.login-form .fas {
+  position: absolute;
+  left: 20px;
+  color: #3f5d45;
+  z-index: 1;
+}
+.login-form input {
+  width: 100%;
+  padding: 20px 16px 20px 50px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #EAF0ED;
+}
+.login-form input:focus {
+  background-color: #ffffff;
+}
+
+.login-submit {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 22px;
+  letter-spacing: 6px;
+  color: #3f5d45;
+  background-color: #FFE180;
+}
+.login-submit:hover {
+  letter-spacing: 1px;
+  transition: 0.6s;
+}
+
+/* ------ connect ------*/
+.connect {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #8DA291;
+  background-color: #EAF0ED;
+}
+.connect h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.connect a {
+  background-color: #fff;
+  padding: 18px 110px;
+}
+.connect a + a {
+  margin-top: 16px;
+}
+
+/* ─────────────────── invoice_content end ───────────────────*/
 /* ─────────────────── footer start ───────────────────*/
 .wrap {
   max-width: 780px;
@@ -770,7 +873,6 @@ input:focus {
   position: relative;
 }
 .subscribe-form input {
-  border: none;
   max-width: 250px;
   padding: 10px 20px 10px 52px;
   box-sizing: border-box;
@@ -800,10 +902,6 @@ input:focus {
   100% {
     transform: translateX(10px);
   }
-}
-.subscribe-form input:focus,
-.subscribe-form button:focus {
-  outline: none;
 }
 
 .subs-envelope {

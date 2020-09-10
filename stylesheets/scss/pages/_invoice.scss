@@ -84,7 +84,6 @@
         display: block;
         padding: 15px 0;
         cursor: pointer;
-        text-decoration: none;
         color: $color-secondary;
         &:hover {
             background-color: rgb(234, 240, 237, .7);
@@ -107,7 +106,6 @@
         font-weight: 300;
         font-family: inherit;
         color: $color-primary;
-        border: none;
         padding: 17px 20px;
         box-sizing: border-box;
         background-color: $color-secondary;
@@ -143,7 +141,6 @@
     padding: 20px 0;
     font-size: 22px;
     letter-spacing: 6px;
-    text-decoration: none;
     color: $color-primary;
     background-color: $color-highlight;
     display: flex;

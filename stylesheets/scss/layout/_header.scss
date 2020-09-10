@@ -19,7 +19,6 @@
 }
 
 .logo {
-    display: block;
     width: 220px;
     height: 40px;
     background: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg) no-repeat center center / contain;
@@ -42,12 +41,15 @@
             display: block;
             padding: 5px 15px;
             color: $color-primary;
-            text-decoration: none;
             &:hover {
                 background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
             }
         }
     }
+}
+
+.now-page {
+    background-color: #000000;
 }
 
 .shopping-cart {
@@ -104,7 +106,6 @@
                 border-top: 1px solid $color-secondary;
             }
             a {
-                display: block;
                 padding: 15px 0;
                 &:hover {
                     background: $color-secondary;

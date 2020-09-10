@@ -1,0 +1,23 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    border: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}

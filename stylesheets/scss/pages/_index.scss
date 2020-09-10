@@ -34,11 +34,9 @@
         background-color: $color-primary;
     }
     &-list a {
-        display: block;
         padding: 16px 0;
         font-size: 22px;
         color: $color-primary;
-        text-decoration: none;
         border-left: 1px $color-secondary solid;
         border-right: 1px $color-secondary solid;
         border-bottom: 1px $color-secondary solid;
@@ -197,7 +195,6 @@
             width: 60px;
             height: 60px;
             color: $color-primary;
-            text-decoration: none;
             border-left: 1px solid $color-secondary;
             display: flex;
             align-items: center;
