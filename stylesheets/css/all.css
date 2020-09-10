@@ -803,7 +803,7 @@ input:focus {
   align-items: center;
   margin-bottom: 16px;
 }
-.login-form .fas {
+.login-form i {
   position: absolute;
   left: 20px;
   color: #3f5d45;
