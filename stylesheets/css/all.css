@@ -492,7 +492,7 @@ a {
 /* ─────────────────── invoice_content start ───────────────────*/
 .content-inner {
   max-width: 780px;
-  margin: 30px auto 45px;
+  margin: 30px auto 60px;
 }
 
 /* ------ invoice ------*/
@@ -747,11 +747,6 @@ input:focus {
 }
 /* ─────────────────── invoice_content end ───────────────────*/
 /* ─────────────────── invoice_content start ───────────────────*/
-.content-inner {
-  max-width: 780px;
-  margin: 30px auto 45px;
-}
-
 .inner-login {
   display: flex;
   align-items: center;
