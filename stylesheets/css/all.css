@@ -802,11 +802,9 @@ input:focus {
 }
 
 .login-submit {
-  display: flex;
-  justify-content: center;
   padding: 16px;
-  box-sizing: border-box;
   font-size: 22px;
+  text-align: center;
   letter-spacing: 6px;
   color: #3f5d45;
   background-color: #FFE180;
@@ -834,10 +832,14 @@ input:focus {
 }
 .connect a {
   background-color: #fff;
+  border: 2px #fff solid;
   padding: 18px 110px;
 }
 .connect a + a {
   margin-top: 16px;
+}
+.connect a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ─────────────────── invoice_content end ───────────────────*/

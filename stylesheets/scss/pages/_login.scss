@@ -59,11 +59,9 @@
 }
 
 .login-submit {
-    display: flex;
-    justify-content: center;
     padding: 16px;
-    box-sizing: border-box;
     font-size: 22px;
+    text-align: center;
     letter-spacing: 6px;
     color: $color-primary;
     background-color: $color-highlight;
@@ -92,9 +90,13 @@
     }
     a {
         background-color: #fff;
+        border: 2px #fff solid;
         padding: 18px 110px;
         &+a {
             margin-top: 16px;
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, .5);
         }
     }
 }
