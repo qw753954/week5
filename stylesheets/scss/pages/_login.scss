@@ -96,5 +96,14 @@
     }
 }
 
+@include pad {
+    .login {
+        width: 100%;
+    }
+    .connect {
+        display: none;
+    }
+}
+
 
 /* ─────────────────── invoice_content end ───────────────────*/

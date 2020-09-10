@@ -833,6 +833,15 @@ input:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 768px) {
+  .login {
+    width: 100%;
+  }
+
+  .connect {
+    display: none;
+  }
+}
 /* ─────────────────── invoice_content end ───────────────────*/
 /* ─────────────────── footer start ───────────────────*/
 .wrap {
