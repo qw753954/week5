@@ -2,9 +2,13 @@
 @import "config/reset";
 @import "config/mixin";
 @import "config/global";
+//
 @import "layout/header";
+//
+@import "pages/sort";
 @import "pages/index";
 @import "pages/invoice";
 @import "pages/login";
 @import "pages/paySuccess";
+//
 @import "layout/footer";
