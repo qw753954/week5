@@ -636,6 +636,10 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .sort {
+    width: 100%;
+  }
+
   .whyContent {
     writing-mode: initial;
     height: auto;

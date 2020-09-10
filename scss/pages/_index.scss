@@ -156,6 +156,9 @@
 }
 
 @include computer {
+    .sort {
+        width: 100%;
+    }
     .why {
         &Content {
             writing-mode: initial;
