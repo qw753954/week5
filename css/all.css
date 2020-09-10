@@ -288,7 +288,7 @@ a {
   }
 }
 /* ─────────────────── banner end ───────────────────*/
-/* ─────────────────── index_content start ───────────────────*/
+/* ─────────────────── sort_content start ───────────────────*/
 .content {
   display: flex;
   justify-content: space-between;
@@ -438,8 +438,8 @@ a {
     width: 65%;
   }
 }
-/* ─────────────────── index_content end ───────────────────*/
-/* ─────────────────── index_page start ───────────────────*/
+/* ─────────────────── sort_content end ───────────────────*/
+/* ─────────────────── sort_page start ───────────────────*/
 .page {
   display: flex;
   justify-content: flex-end;
@@ -480,11 +480,11 @@ a {
     justify-content: center;
   }
 }
-/* ─────────────────── index_page end ───────────────────*/
+/* ─────────────────── sort_page end ───────────────────*/
 /* ─────────────────── banner start ───────────────────*/
 .mainBanner {
   height: 500px;
-  background: url(../../images/main-banner.jpg) no-repeat center/cover;
+  background: url(../images/main-banner.jpg) no-repeat center/cover;
 }
 
 /* ─────────────────── banner end ───────────────────*/
@@ -641,10 +641,7 @@ a {
     height: auto;
     padding: 30px;
   }
-  .whyPic {
-    display: none;
-  }
-  .whyTitle {
+  .whyPic, .whyTitle {
     display: none;
   }
 
@@ -1079,7 +1076,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(../../images/paySuccess_bg.jpg) no-repeat center center/cover;
+  background: url(../images/paySuccess_bg.jpg) no-repeat center center/cover;
 }
 .success img {
   width: 190px;
