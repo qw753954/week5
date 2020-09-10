@@ -380,10 +380,6 @@ a {
   transition: 0.2s;
 }
 
-.heartIng {
-  font-weight: 800;
-}
-
 .add {
   width: 100%;
   color: #3f5d45;
@@ -488,7 +484,9 @@ a {
 /* ─────────────────── invoice_content start ───────────────────*/
 .content-inner {
   max-width: 780px;
-  margin: 30px auto 60px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* ------ invoice ------*/
@@ -743,8 +741,7 @@ input:focus {
 }
 /* ─────────────────── invoice_content end ───────────────────*/
 /* ─────────────────── invoice_content start ───────────────────*/
-.inner-login {
-  display: flex;
+.align-centre {
   align-items: center;
 }
 
