@@ -1,0 +1,41 @@
+/* ─────────────────── invoice_content start ───────────────────*/
+
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 460px;
+    background: url(../../images/paySuccess_bg.jpg) no-repeat center center/cover;
+    img {
+        width: 190px;
+        margin-bottom: 50px;
+    }
+    a {
+        padding: 15px 100px;
+        font-size: 24px;
+        color: $color-primary;
+        background-color: $color-highlight;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-highlight;
+            border: $color-primary;
+            transition: .5s;
+        }
+    }
+}
+
+.line-dark {
+    margin-bottom: 32px;
+    i+i {
+        margin-left: 65px;
+    }
+    i:first-child::after,
+    i:nth-child(2)::after {
+        width: 65px;
+        background-color: $color-primary;
+    }
+}
+
+
+/* ─────────────────── invoice_content end ───────────────────*/

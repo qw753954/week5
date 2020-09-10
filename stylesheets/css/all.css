@@ -877,6 +877,45 @@ input:focus {
   }
 }
 /* ─────────────────── invoice_content end ───────────────────*/
+/* ─────────────────── invoice_content start ───────────────────*/
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 460px;
+  background: url(../../images/paySuccess_bg.jpg) no-repeat center center/cover;
+}
+.success img {
+  width: 190px;
+  margin-bottom: 50px;
+}
+.success a {
+  padding: 15px 100px;
+  font-size: 24px;
+  color: #3f5d45;
+  background-color: #FFE180;
+}
+.success a:hover {
+  background-color: #3f5d45;
+  color: #FFE180;
+  border: #3f5d45;
+  transition: 0.5s;
+}
+
+.line-dark {
+  margin-bottom: 32px;
+}
+.line-dark i + i {
+  margin-left: 65px;
+}
+.line-dark i:first-child::after,
+.line-dark i:nth-child(2)::after {
+  width: 65px;
+  background-color: #3f5d45;
+}
+
+/* ─────────────────── invoice_content end ───────────────────*/
 /* ─────────────────── footer start ───────────────────*/
 .wrap {
   max-width: 780px;
