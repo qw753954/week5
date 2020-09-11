@@ -1127,6 +1127,9 @@ input:focus {
   .success {
     margin-bottom: 65px;
   }
+  .success img {
+    margin-bottom: 0;
+  }
   .success a {
     position: absolute;
     width: 100%;
