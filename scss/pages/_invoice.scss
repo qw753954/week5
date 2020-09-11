@@ -102,22 +102,28 @@
         margin-bottom: 8px;
     }
     input[type="tel"],
+    input[type="text"],
     input[type="email"],
     select {
+        padding: 17px 20px;
+        box-sizing: border-box;
         font-size: 16px;
         font-weight: 300;
         font-family: inherit;
         color: $color-primary;
-        padding: 17px 20px;
-        box-sizing: border-box;
         background-color: $color-secondary;
         &:focus {
             background-color: #fff;
         }
     }
     input[type="tel"],
+    input[type="text"],
     input[type="email"] {
         width: 100%;
+    }
+    input[type="text"],
+    input[type="email"] {
+        margin-bottom: 16px;
     }
     select {
         width: 48%;
