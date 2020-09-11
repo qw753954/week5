@@ -657,6 +657,10 @@ a {
     margin: 0;
   }
 
+  .why-title-up {
+    display: block;
+  }
+
   .slogans-row {
     display: block;
     width: 100%;
@@ -664,10 +668,6 @@ a {
 
   .slogans {
     display: none;
-  }
-
-  .why-title-up {
-    display: block;
   }
 }
 @media (max-width: 768px) {
