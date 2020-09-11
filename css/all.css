@@ -1097,6 +1097,7 @@ input:focus {
   font-size: 24px;
   text-align: center;
   padding: 15px 100px;
+  box-sizing: border-box;
   color: #3f5d45;
   border: 1px #FFE180 solid;
   background-color: #FFE180;
