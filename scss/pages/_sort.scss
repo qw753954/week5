@@ -43,7 +43,7 @@
     }
     &-list :nth-child(n + 2):hover {
         background-color: rgba(234, 240, 237, 0.6);
-        transition: 0.3s;
+        transition: .3s;
     }
     &-active {
         background-color: $color-secondary;
