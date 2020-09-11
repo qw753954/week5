@@ -11,13 +11,13 @@
 
 /* ─────────────────── index_content start ───────────────────*/
 
-.sort {
+.category {
     width: 83%;
     margin: -90px auto 100px;
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
-    &Item {
+    &-item {
         position: relative;
         font-size: 24px;
         text-align: center;
@@ -89,7 +89,7 @@
 .why {
     background-color: $color-secondary;
     margin-bottom: 105px;
-    &Content {
+    &-content {
         padding: 70px 0;
         height: 19rem;
         margin: auto;
@@ -99,7 +99,7 @@
         color: $color-tertiary;
         writing-mode: vertical-rl;
     }
-    &Pic {
+    &-pic {
         margin: -20px 0;
         width: 500px;
         height: 500px;
@@ -109,7 +109,7 @@
             object-fit: cover;
         }
     }
-    &Title {
+    &-title {
         margin-top: -20px;
         width: 88px;
     }
@@ -136,7 +136,7 @@
     margin: 0 auto 80px;
 }
 
-.whyPicUp {
+.why-title-up {
     display: none;
     width: 100%;
     height: 350px;
@@ -147,26 +147,29 @@
     }
 }
 
-.sort-productItem {
-    width: 31%;
-    margin-bottom: 60px;
-    &+& {
-        margin-left: 20px;
+.index-cards {
+    width: 100%;
+    .card-item {
+        width: 31%;
+        margin-bottom: 60px;
+        &+& {
+            margin-left: 20px;
+        }
     }
 }
 
 @include computer {
-    .sort {
+    .category {
         width: 100%;
     }
     .why {
-        &Content {
+        &-content {
             writing-mode: initial;
             height: auto;
             padding: 30px;
         }
-        &Pic,
-        &Title {
+        &-pic,
+        &-title {
             display: none;
         }
     }
@@ -180,17 +183,20 @@
     .slogans {
         display: none;
     }
-    .whyPicUp {
+    .why-title-up {
         display: block;
     }
 }
 
 @include pad {
-    .whyPicUp {
-        height: 250px;
-    }
-    .sort-productItem {
-        width: 60%;
+    .index-cards {
+        justify-content: center;
+        .card-item {
+            width: 60%;
+        }
+        .card-pic img {
+            width: 100%;
+        }
     }
 }
 

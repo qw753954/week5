@@ -50,13 +50,14 @@
     }
 }
 
-.product {
+.sort-cards {
     width: 66%;
-    &-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     &-item {
         width: 48%;
         border: 1px $color-secondary solid;
@@ -139,18 +140,18 @@
             }
         }
     }
-    .product {
+    .sort-cards {
         width: 100%;
         margin-top: 30px;
-        &-list {
+        .card {
             justify-content: space-evenly;
-        }
-        &-item {
-            width: 42%;
-            margin-bottom: 30px;
-        }
-        &-pic img {
-            width: 100%;
+            &-item {
+                width: 42%;
+                margin-bottom: 30px;
+            }
+            &-pic img {
+                width: 100%;
+            }
         }
     }
 }
@@ -159,8 +160,10 @@
     .menu-list li {
         width: 100%;
     }
-    .product-item {
-        width: 65%;
+    .sort-cards {
+        .card-item {
+            width: 60%;
+        }
     }
 }
 
