@@ -7,8 +7,16 @@
     <title>付款成功 | Sweetaste*</title>
 
     <link rel="shortcut icon" href="images/logo-dark.svg">
+    <meta name='description' content='想吃甜點，是不需要理由的' />
+
+    <meta property="og:title" content="Sweetaste*" />
+    <meta property="og:description" content="想吃甜點，是不需要理由的">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://qw753954.github.io/week5/" />
+    <meta property="og:image" content="https://i.imgur.com/pvh5LAf.png" />
 
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -25,7 +33,7 @@
             <div class="nav">
                 <ul class="navbar">
                     <li><a href="index.html">首頁</a></li>
-                    <li><a href="#">甜點</a></li>
+                    <li><a href="sort.html">甜點</a></li>
                     <li><a href="login.html">登入</a></li>
                 </ul>
                 <a href="invoice.html" class="shopping-cart"><i class="fas fa-shopping-cart"></i></a>
@@ -35,7 +43,7 @@
 
         <!-- ─────────────────── 客製化區塊 start ─────────────────── -->
 
-        <div class="content">
+        <div class="content" data-aos="zoom-out" data-aos-duration="500">
             <div class="success">
                 <span class="step-icon line-dark">
                     <i class="fas fa-check-circle"></i>
@@ -103,8 +111,10 @@
 
 
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- MY -->
     <script src="js/jquery.min.js"></script>
     <script src="js/all.js"></script>
 
