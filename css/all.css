@@ -199,6 +199,7 @@ a {
   padding: 5px 15px;
   color: #3f5d45;
 }
+.navbar .active,
 .navbar a:hover {
   background: linear-gradient(180deg, #fff 50%, #EAF0ED 50%);
 }

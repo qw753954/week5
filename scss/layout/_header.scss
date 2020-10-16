@@ -41,9 +41,10 @@
             display: block;
             padding: 5px 15px;
             color: $color-primary;
-            &:hover {
-                background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
-            }
+        }
+        .active,
+        a:hover {
+            background: linear-gradient(180deg, #fff 50%, $color-secondary 50%);
         }
     }
 }
