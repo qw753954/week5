@@ -267,6 +267,9 @@ a {
     background: #EAF0ED;
     transition: 0.5s;
   }
+  .navbar .active {
+    background: none;
+  }
 
   .shopping-cart {
     margin-left: 0;

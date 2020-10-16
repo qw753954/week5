@@ -109,8 +109,12 @@
                     transition: .5s;
                 }
             }
+            .active {
+                background: none;
+            }
         }
     }
+    
     .shopping-cart {
         margin-left: 0;
     }
